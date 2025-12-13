@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-event">
-
+ 
 <header class="header">
   <div class="header-inner container">
     <a class="brand" href="../index.html">All-In-One Solution</a>
@@ -27,8 +27,20 @@
   </div>
 </header>
 
+<!-- Background video for Event Management (autoplays on capable devices, muted, playsinline) -->
+<div class="page-bg-media" aria-hidden="true">
+  <video id="event-bg-video" class="page-bg-video" playsinline muted autoplay loop preload="metadata" poster="..//assets/images/Event Management.mp4">
+    <!-- Primary: webm if available, fallback to mp4. Replace src with real assets in /videos or /assets/videos -->
+    <source src="..//assets/images/Event Management.mp4" type="video/webm">
+    <source src="..//assets/images/Event Management.mp4" type="video/mp4">
+    <!-- External fallback if you don't have files yet. Replace with your asset. -->
+    <!-- <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"> -->
+    <!-- Last fallback: nothing - poster image will display -->
+  </video>
+</div>
+
 <section class="container hero">
-  <div>
+
     <div class="eyebrow">Premium Event Services</div>
 
     <h1 class="hero-title">We Create Experiences, Not Just Events</h1>
@@ -197,20 +209,8 @@
     <h2>Event Team Lead</h2>
     <p class="muted">Meet the lead orchestrating our event operations</p>
   </div>
-  <div class="founders-grid">
-    <div class="founder-card featured">
-      <div class="founder-avatar"><img src="https://via.placeholder.com/96?text=RV" alt="Riya Verma"></div>
-      <div class="founder-info">
-        <div class="founder-name">Riya Verma</div>
-        <div class="founder-role">Founder & Event Director</div>
-        <div class="founder-team">Event Management</div>
-        <div class="founder-bio">Specialist in large-format event planning, logistics, and artist management.</div>
-        <div class="founder-actions">
-          <a href="https://instagram.com/riya.example" target="_blank" rel="noopener noreferrer" aria-label="Riya on Instagram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.37a4 4 0 1 1-7.99-.37 4 4 0 0 1 7.99.37z" stroke="currentColor" stroke-width="1.5"/><path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="label">Instagram</span></a>
-          <a href="https://linkedin.com/in/riya.example" target="_blank" rel="noopener noreferrer" aria-label="Riya on LinkedIn"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 11v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9v.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17v-4c0-.9.6-1.5 1.4-1.5s1.7.7 1.7 1.5V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="label">LinkedIn</span></a>
-        </div>
-      </div>
-    </div>
+  <div class="founders-grid" data-featured="Riya Verma">
+    <!-- Populated dynamically via script from assets/data/founders.json -->
   </div>
 </section>
 
@@ -239,7 +239,7 @@
   </div>
 </footer>
 
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

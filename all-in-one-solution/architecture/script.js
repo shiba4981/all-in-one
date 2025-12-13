@@ -1,21 +1,21 @@
-// Page-specific JS for Construction
+// Page-specific JS for Architecture
 // Provides small tweaks for hero/portfolio and any per-page initializations
 (function(){
   document.addEventListener('DOMContentLoaded', () => {
     // Hero background: if no image configured inline, add a class
     const heroIllustration = document.querySelector('.hero-illustration');
     if(heroIllustration && !heroIllustration.style.backgroundImage){
-      heroIllustration.classList.add('bg-construction');
+      heroIllustration.classList.add('bg-architecture');
     }
 
-    // Add construction portfolio images if not defined inline
+    // Add architecture portfolio images if not defined inline
     document.querySelectorAll('.portfolio-card').forEach((card, i) => {
-      if(card.classList.contains('bg-residential') || card.classList.contains('bg-office') || card.classList.contains('bg-mall') || card.classList.contains('bg-road')) return;
+      if(card.classList.contains('bg-modern') || card.classList.contains('bg-corporate') || card.classList.contains('bg-walkthrough') || card.classList.contains('bg-apartment')) return;
       switch(i){
-        case 0: card.classList.add('bg-residential'); break;
-        case 1: card.classList.add('bg-office'); break;
-        case 2: card.classList.add('bg-mall'); break;
-        default: card.classList.add('bg-road'); break;
+        case 0: card.classList.add('bg-modern'); break;
+        case 1: card.classList.add('bg-corporate'); break;
+        case 2: card.classList.add('bg-walkthrough'); break;
+        default: card.classList.add('bg-apartment'); break;
       }
     });
 

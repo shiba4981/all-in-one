@@ -1,0 +1,97 @@
+/* Mobile fallback: disable fixed backgrounds on small devices and use a positioned background (some mobile browsers perform poorly with fixed) */
+@media (max-width:780px){
+  .page-event::before, .page-event::after{position:absolute}
+}
+
+/* ensure overlay / content readability - sections use a subtle glass background */
+.page-event .container.section, .page-event header.header, .page-event footer.site-footer{background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.04));backdrop-filter:blur(6px);}
+/* Container to hold the video and content */
+.video-container {
+    position: relative;
+    height: 100vh; /* Set to full viewport height */
+    overflow: hidden;
+}
+
+/* Styling for the actual video element */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Pushes the video to the very back */
+    transform: translate(-50%, -50%); /* Centers the video */
+    object-fit: cover; /* Ensures the video covers the entire container without distortion */
+}
+
+/* Overlay to ensure text readability (CRITICAL STEP) */
+.content-overlay {
+    position: absolute;
+    inset: 0; /* Shorthand for top:0; right:0; bottom:0; left:0; */
+    z-index: 1; /* Puts the content on top of the video */
+    background: rgba(0, 0, 0, 0.4); /* Dark, semi-transparent overlay */
+    
+    /* Center the text/buttons vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure text is visible */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Helps text pop */
+}@media (max-width: 768px) {
+    .video-container video {
+        display: none; /* Hide the video element */
+    }
+    
+    .video-container {
+        /* Use the poster image as a static background on mobile */
+        background-image: url('videos/poster.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* You may need a stronger overlay for dark text */
+    .content-overlay {
+        background: rgba(0, 0, 0, 0.6); 
+    }
+}
+/* Container to hold the video and content */
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Styling for the actual video element (ensuring full-screen coverage and positioning) */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+/* 🚀 NEW: Class for Object Fit */
+.object-cover {
+    object-fit: cover; /* Ensures the video covers the entire container without distortion */
+}
+
+/* Overlay to ensure text readability */
+.content-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

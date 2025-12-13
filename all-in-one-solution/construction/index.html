@@ -33,6 +33,17 @@
 </header>
 
 <!-- HERO -->
+ <!-- Background video for Event Management (autoplays on capable devices, muted, playsinline) -->
+<div class="page-bg-media" aria-hidden="true">
+  <video id="event-bg-video" class="page-bg-video" playsinline muted autoplay loop preload="metadata" poster="..//assets/images/Event Management.mp4">
+    <!-- Primary: webm if available, fallback to mp4. Replace src with real assets in /videos or /assets/videos -->
+    <source src="..//assets/images/construction.mp4" type="video/webm">
+    <source src="..//assets/images/construction.mp4" type="video/mp4">
+    <!-- External fallback if you don't have files yet. Replace with your asset. -->
+    <!-- <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"> -->
+    <!-- Last fallback: nothing - poster image will display -->
+  </video>
+</div>
 <section class="container hero">
   <div>
     <div class="eyebrow">Engineering • Construction • Development</div>
@@ -104,8 +115,8 @@
     <h2>Construction Team Lead</h2>
     <p class="muted">Meet the lead ensuring quality and timelines</p>
   </div>
-  <div class="founders-grid">
-    <div class="founder-card featured">
+  <div class="founders-grid" data-featured="Satish Patel">
+    <!-- Populated from assets/data/founders.json -->
       <div class="founder-avatar"><img src="https://via.placeholder.com/96?text=SP" alt="Satish Patel"></div>
       <div class="founder-info">
         <div class="founder-name">Satish Patel</div>
@@ -245,7 +256,7 @@
   </div>
 </footer>
 
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

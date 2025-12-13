@@ -1,0 +1,162 @@
+[
+  {
+    "id": "shreyash-kar",
+    "name": "Shreyash Kar",
+    "role": "Founder & Principal Architect",
+    "team": "Architecture",
+    "bio": "Design-led architect focusing on sustainable, modern architecture solutions.",
+    "avatar": "/assets/images/Shreyash.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "sadashiv-sahoo",
+    "name": "Sadashiv Sahoo",
+    "role": "Founder & Event Director",
+    "team": "Event Management",
+    "bio": "Experienced event producer delivering large-scale corporate and consumer events.",
+    "avatar": "/assets/images/Sadashiv.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "shiba-dash",
+    "name": "Shiba Narayan Dash",
+    "role": "Founder & Lead Developer",
+    "team": "Web Development",
+    "bio": "Builds performant, accessible web experiences and leads frontend engineering.",
+    "avatar": "/assets/images/shiba.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "aditya-choudhary",
+    "name": "Aditya Devraj Choudhary",
+    "role": "Founder & Operations Head",
+    "team": "Construction",
+    "bio": "Oversees build and site operations with strong project management and safety expertise.",
+    "avatar": "/assets/images/Aditya.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "aryan-mohapatra",
+    "name": "Aryan Mohapatra",
+    "role": "Founder & Growth Lead",
+    "team": "Digital Marketing",
+    "bio": "Strategizes performance marketing and creative growth campaigns across channels.",
+    "avatar": "/assets/images/aryan.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "shankar-nanda",
+    "name": "Shankar Ku Nanda",
+    "role": "Founder & Head of Mobile",
+    "team": "App Development",
+    "bio": "Leads mobile engineering and native app development.",
+    "avatar": "/assets/images/Shankar.jpeg",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "satish-patel",
+    "name": "Satish Patel",
+    "role": "Founder & Construction Lead",
+    "team": "Construction",
+    "bio": "Experienced site supervisor & construction strategist.",
+    "avatar": "https://via.placeholder.com/96?text=SP",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "riya-verma",
+    "name": "Riya Verma",
+    "role": "Founder & Event Producer",
+    "team": "Event Management",
+    "bio": "Specializes in large-scale event production and artist management.",
+    "avatar": "https://via.placeholder.com/96?text=RV",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "meera-kapoor",
+    "name": "Meera Kapoor",
+    "role": "Founder & Creative Director",
+    "team": "Graphic Design",
+    "bio": "A creative lead with a decade of experience in brand identity and design systems.",
+    "avatar": "https://via.placeholder.com/96?text=MK",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "ishaan-roy",
+    "name": "Ishaan Roy",
+    "role": "Founder & Director of Photography",
+    "team": "Photography & Videography",
+    "bio": "A visual storyteller who captures brand narratives with cinematic precision.",
+    "avatar": "https://via.placeholder.com/96?text=IR",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "priya-kapoor",
+    "name": "Priya Kapoor",
+    "role": "Founder & Interior Lead",
+    "team": "Interior Design",
+    "bio": "Creates interior environments that are both beautiful and highly functional.",
+    "avatar": "https://via.placeholder.com/96?text=PK",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "vikram-das",
+    "name": "Vikram Das",
+    "role": "Founder & Mobile Lead",
+    "team": "App Development",
+    "bio": "Native and cross-platform app expert focusing on performance.",
+    "avatar": "https://via.placeholder.com/96?text=VD",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "asha-reddy",
+    "name": "Asha Reddy",
+    "role": "Founder & Social Strategy Lead",
+    "team": "Social Media Management",
+    "bio": "Leads social strategy and content operations with a data-driven approach.",
+    "avatar": "https://via.placeholder.com/96?text=AR",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "anil-shah",
+    "name": "Anil Shah",
+    "role": "Founder & Print Director",
+    "team": "Advertising & Printing",
+    "bio": "Expert in print production and campaign creation.",
+    "avatar": "https://via.placeholder.com/96?text=AS",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "sana-khan",
+    "name": "Sana Khan",
+    "role": "Founder & Performance Lead",
+    "team": "Digital Marketing",
+    "bio": "Delivers data-backed marketing campaigns across channels.",
+    "avatar": "https://via.placeholder.com/96?text=SK",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "id": "maya-desai",
+    "name": "Maya Desai",
+    "role": "Founder & Brand Strategist",
+    "team": "Branding & Identity",
+    "bio": "Guides brand strategy and identity systems that help businesses stand out.",
+    "avatar": "https://via.placeholder.com/96?text=MD",
+    "instagram": "#",
+    "linkedin": "#"
+  }
+]

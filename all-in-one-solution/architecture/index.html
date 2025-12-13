@@ -6,15 +6,16 @@
   <title>Architecture Services | All-In-One Solution</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="page-event">
 
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner container">
-    <a class="brand" href="../all-in-one-solution/index.html">All-In-One Solution</a>
+    <a class="brand" href="../index.html">All-In-One Solution</a>
 
     <button id="menuToggle" class="menu-toggle">
       <svg width="26" height="26" viewBox="0 0 24 24">
@@ -46,6 +47,10 @@
 
     <a class="btn-primary" href="#services">Explore Services</a>
   </div>
+  <div class="hero-illustration bg-architecture" aria-hidden="true">
+    <div class="hero-deco" aria-hidden="true"></div>
+    🏛 Modern Architecture
+  </div>
 </section>
 
 <!-- SERVICES -->
@@ -56,12 +61,36 @@
   </div>
 
   <div class="services-grid">
-    <div class="service-card">📏 2D Floor Plans & Layouts</div>
-    <div class="service-card">🏛 3D Architectural Modeling</div>
-    <div class="service-card">🧱 Elevation & Structural Designs</div>
-    <div class="service-card">🏢 Commercial & Residential Planning</div>
-    <div class="service-card">🎥 3D Walkthrough Animations</div>
-    <div class="service-card">🧩 Interior & Exterior Concepts</div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-plan">
+      <div class="service-card-title" id="service-plan"><span class="service-icon">📏</span> 2D Floor Plans & Layouts</div>
+      <p class="muted">Accurate technical floor plans ready for permit & construction.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">Request Plan</a></div>
+    </div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-3d">
+      <div class="service-card-title" id="service-3d"><span class="service-icon">🏛</span> 3D Architectural Modeling</div>
+      <p class="muted">High-fidelity 3D models to visualize form, light and materiality.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">View Models</a></div>
+    </div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-elev">
+      <div class="service-card-title" id="service-elev"><span class="service-icon">🧱</span> Elevation & Structural Designs</div>
+      <p class="muted">Engineering-backed elevation and structural solutions.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">Get Quote</a></div>
+    </div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-res">
+      <div class="service-card-title" id="service-res"><span class="service-icon">🏢</span> Commercial & Residential Planning</div>
+      <p class="muted">Master planning for efficient, beautiful spaces.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">Discuss Project</a></div>
+    </div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-walk">
+      <div class="service-card-title" id="service-walk"><span class="service-icon">🎥</span> 3D Walkthrough Animations</div>
+      <p class="muted">Immersive walkthroughs to present your design in motion.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">Request Walkthrough</a></div>
+    </div>
+    <div class="service-card" tabindex="0" aria-labelledby="service-int">
+      <div class="service-card-title" id="service-int"><span class="service-icon">🧩</span> Interior & Exterior Concepts</div>
+      <p class="muted">Conceptual design and material palettes for cohesive spaces.</p>
+      <div class="service-cta"><a class="btn-secondary btn-small" href="#contact">Start a Project</a></div>
+    </div>
   </div>
 </section>
 
@@ -73,10 +102,22 @@
   </div>
 
   <div class="portfolio-grid">
-    <div class="portfolio-card">Modern House Plan</div>
-    <div class="portfolio-card">Corporate Building</div>
-    <div class="portfolio-card">3D Walkthrough</div>
-    <div class="portfolio-card">Apartment Layout</div>
+    <div class="portfolio-card bg-modern" tabindex="0">
+      <div class="portfolio-title">Modern House Plan</div>
+      <button class="view-btn" aria-label="View Modern House Plan">View</button>
+    </div>
+    <div class="portfolio-card bg-corporate" tabindex="0">
+      <div class="portfolio-title">Corporate Building</div>
+      <button class="view-btn" aria-label="View Corporate Building">View</button>
+    </div>
+    <div class="portfolio-card bg-walkthrough" tabindex="0">
+      <div class="portfolio-title">3D Walkthrough</div>
+      <button class="view-btn" aria-label="View 3D Walkthrough">View</button>
+    </div>
+    <div class="portfolio-card bg-apartment" tabindex="0">
+      <div class="portfolio-title">Apartment Layout</div>
+      <button class="view-btn" aria-label="View Apartment Layout">View</button>
+    </div>
   </div>
 </section>
 
@@ -87,38 +128,46 @@
     <p class="muted">Custom architecture plans for all projects</p>
   </div>
 
-  <div class="pricing-grid">
+  <div class="pricing-wrap">
+    <div class="pricing-grid">
 
-    <div class="pricing-card">
-      <h3>Basic Design</h3>
+    <div class="pricing-card" aria-labelledby="basic-title" tabindex="0">
+      <div class="pricing-badge">Starter</div>
+      <h3 id="basic-title">Basic Design</h3>
       <div class="price">₹3,999</div>
-      <ul>
+      <ul class="pricing-features">
         <li>2D Floor Plan</li>
         <li>Basic Elevation</li>
         <li>Single Revision</li>
       </ul>
+      <div class="pricing-cta"><a class="btn-primary btn-block" href="#contact">Book Basic</a></div>
     </div>
 
-    <div class="pricing-card featured">
-      <h3>Premium Plan</h3>
+    <div class="pricing-card featured" aria-labelledby="prem-title" tabindex="0">
+      <div class="pricing-badge featured-badge">Most Popular</div>
+      <h3 id="prem-title">Premium Plan</h3>
       <div class="price">₹12,999</div>
-      <ul>
+      <ul class="pricing-features">
         <li>2D + 3D Layout</li>
         <li>Premium Elevation Design</li>
         <li>3 Revisions</li>
       </ul>
+      <div class="pricing-cta"><a class="btn-primary btn-block" href="#contact">Book Premium</a></div>
     </div>
 
-    <div class="pricing-card">
-      <h3>Full Project Architecture</h3>
+    <div class="pricing-card" aria-labelledby="lux-title" tabindex="0">
+      <div class="pricing-badge">Enterprise</div>
+      <h3 id="lux-title">Full Project Architecture</h3>
       <div class="price">Contact</div>
-      <ul>
+      <ul class="pricing-features">
         <li>Complete Building Plan</li>
         <li>Interior + Exterior Concepts</li>
         <li>3D Modeling + Walkthrough</li>
       </ul>
+      <div class="pricing-cta"><a class="btn-primary btn-block" href="#contact">Contact Us</a></div>
     </div>
 
+    </div>
   </div>
 </section>
 
@@ -149,6 +198,17 @@
       🚀 <strong>Fast Delivery</strong><br>
       Get high-quality plans delivered in record time.
     </div>
+  </div>
+</section>
+
+<!-- FOUNDERS (Architecture Lead) -->
+<section class="container founders section">
+  <div class="section-header">
+    <h2>Architect Lead</h2>
+    <p class="muted">Meet the lead shaping our architectural projects</p>
+  </div>
+  <div class="founders-grid" data-featured="Shreyash Kar">
+    <!-- This grid will be populated at runtime from assets/data/founders.json -->
   </div>
 </section>
 
@@ -227,6 +287,13 @@
     </div>
   </div>
 </section>
+<!-- Portfolio Modal -->
+<div id="portfolioModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-inner">
+    <button class="modal-close" aria-label="Close Preview">✕</button>
+    <img src="" alt="Preview image" />
+  </div>
+</div>
 
 <!-- CALLBACK FORM -->
 <section id="callback" class="container section">
@@ -263,6 +330,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+  <script src="../script.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

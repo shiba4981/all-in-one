@@ -1,14 +1,18 @@
-/* Construction page specific styles */
+/* Architecture page specific styles */
 .hero-illustration { background-size:cover; background-position:center; height:320px; border-radius:18px; display:flex; align-items:center; justify-content:center; color:var(--muted); font-weight:700}
 .hero-illustration.bg-construction { background-image:url('https://via.placeholder.com/720x420?text=Construction+Site'); }
+.hero-illustration.bg-architecture { background-image: linear-gradient(180deg, rgba(0,0,0,0.16), rgba(0,0,0,0.28)), url('https://via.placeholder.com/720x420?text=Modern+Architecture'); }
+/* Decorative overlays for architecture */
+.hero-illustration.bg-architecture::before{content:'';position:absolute;inset:0;border-radius:16px;background:linear-gradient(180deg, rgba(0,0,0,0.14), rgba(0,0,0,0.24));pointer-events:none}
+.hero-illustration.bg-architecture::after{content:'';position:absolute;left:-10px;bottom:-20px;width:180px;height:180px;border-radius:50%;background:conic-gradient(from 0deg, rgba(212,175,55,0.06), rgba(255,255,255,0));filter:blur(28px);opacity:0.95}
 /* Add subtle concrete texture overlay and gold accents */
 .hero-illustration.bg-construction::before{content:'';position:absolute;inset:0;border-radius:16px;background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.28));pointer-events:none}
 .hero-illustration.bg-construction::after{content:'';position:absolute;right:-20px;bottom:-20px;width:160px;height:160px;border-radius:50%;background:conic-gradient(from 0deg, rgba(212,175,55,0.06), rgba(255,255,255,0));filter:blur(28px);opacity:0.9}
 
-.portfolio-card.bg-residential { background-image: url('https://via.placeholder.com/640x420?text=3BHK+House'); }
-.portfolio-card.bg-office      { background-image: url('https://via.placeholder.com/640x420?text=Office+Building'); }
-.portfolio-card.bg-mall        { background-image: url('https://via.placeholder.com/640x420?text=Shopping+Complex'); }
-.portfolio-card.bg-road        { background-image: url('https://via.placeholder.com/640x420?text=Road+Project'); }
+.portfolio-card.bg-modern      { background-image: url('https://via.placeholder.com/640x420?text=Modern+House+Plan'); }
+.portfolio-card.bg-corporate   { background-image: url('https://via.placeholder.com/640x420?text=Corporate+Building'); }
+.portfolio-card.bg-walkthrough { background-image: url('https://via.placeholder.com/640x420?text=3D+Walkthrough'); }
+.portfolio-card.bg-apartment   { background-image: url('https://via.placeholder.com/640x420?text=Apartment+Layout'); }
 
 /* tweak grid spacing for construction pages */
 .page-event .section .portfolio-grid { gap:18px }
