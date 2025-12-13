@@ -1,0 +1,10 @@
+/* Graphic design page specific styles */
+.hero-illustration { background-size: cover; background-position: center; }
+.hero-illustration.bg-brand { background-image: url('https://via.placeholder.com/640x420?text=Brand+Design'); }
+
+.portfolio-card.bg-logo { background-image: url('https://via.placeholder.com/720x460?text=Logo+Design'); }
+.portfolio-card.bg-brandkit { background-image: url('https://via.placeholder.com/720x460?text=Brand+Kit'); }
+.portfolio-card.bg-social { background-image: url('https://via.placeholder.com/720x460?text=Social+Media+Pack'); }
+.portfolio-card.bg-ui { background-image: url('https://via.placeholder.com/720x460?text=UI+Layouts'); }
+
+.client-logos { margin-top: 18px; }

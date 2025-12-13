@@ -1,0 +1,15 @@
+/* Event management page specific styles */
+.hero-illustration {
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-card.bg-college { background-image: url('https://via.placeholder.com/640x420?text=College+Fest'); }
+.portfolio-card.bg-corporate { background-image: url('https://via.placeholder.com/640x420?text=Corporate+Summit'); }
+.portfolio-card.bg-wedding { background-image: url('https://via.placeholder.com/640x420?text=Wedding'); }
+.portfolio-card.bg-product { background-image: url('https://via.placeholder.com/640x420?text=Product+Launch'); }
+
+/* small page overrides */
+.page-event .section .portfolio-grid {
+  gap: 18px;
+}

@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>code# — Freelance Web Developer | Students Global Summit</title>
+  <meta name="description" content="code# — Freelance web developer (Shravan). I build fast, beautiful websites & web apps. Request a quote or view the Students Global Summit demo." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- preload helpful assets -->
+  <link rel="preload" as="image" href="images/ai-bg-desktop.jpg">
+  <link rel="preload" as="image" media="(max-width:780px)" href="images/ai-bg-mobile.jpg">
+  <link rel="preload" as="video" href="videos/new_bg.mp4">
+  </head>
+  <body class="page-event">
+  <!-- Top promotional banner
+  <div class="top-banner">
+    <div class="container header-inner">
+      <div class="banner-text">Founding members price — lock in $1 K/month for a limited time.</div>
+      <div><a href="https://scalefunnels.co/cart" class="btn-primary">Join Now</a></div>
+    </div>
+  </div> -->
+
+  <!-- header -->
+  <header class="header" role="banner">
+    <div class="header-inner container">
+      <a class="brand" href="../index.html">code#</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-primary" href="#contact">Request Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BACKGROUND MEDIA: video + fallback image -->
+  <div class="background-media" aria-hidden="true">
+    <!-- video element: supports both root and videos/ paths so you don't need to rename immediately -->
+    <video id="bg-video"
+           class="bg-video"
+           playsinline
+           autoplay
+           muted
+           loop
+           poster="images/ai-bg-poster.jpg"
+           preload="auto">
+      <source src="videos/new_bg.mp4" type="video/mp4">
+      <source src="new_bg.mp4" type="video/mp4">
+      <!-- optional webm: put videos/new_bg.webm if available -->
+      <!-- <source src="videos/new_bg.webm" type="video/webm"> -->
+      <!-- last-resort fallback is the image below -->
+    </video>
+
+    <!-- fallback image shown on mobile or when video blocked -->
+    <img class="bg-fallback" src="images/ai-bg-mobile.jpg" alt="" aria-hidden="true" />
+  </div>
+
+  <!-- Intro overlay: VLSI intro video (plays once / skippable) -->
+  <div id="introOverlay" class="intro-overlay" aria-hidden="true">
+    <video id="introVideo" class="intro-video" playsinline muted preload="auto" poster="images/vlsi_poster.jpg">
+      <source src="new_bg.mp4" type="video/mp4">
+      <!-- fallback text -->
+      Your browser does not support the intro video.
+    </video>
+    <div class="intro-controls">
+      <button id="skipIntro" class="btn-ghost">Skip intro</button>
+      <button id="enterSite" class="btn-primary" hidden>Enter site</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero stagger" id="home">
+      <div>
+        <div class="eyebrow">Freelance • Frontend • Design</div>
+        <h1 class="hero-title">We design & build beautiful, conversion-focused websites</h1>
+        <p class="hero-sub">Hi — I’m Shiva_i (code#). I build fast, accessible websites & small web apps that help organisations convert visitors into customers.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary pulse" href="#contact">Request a quote</a>
+          <a class="btn-secondary" href="#pricing">See pricing</a>
+        </div>
+
+        <ul class="benefits" style="margin-top:18px;">
+          <li>✅ Fixed-price packages</li>
+          <li>✅ Production-ready & accessible</li>
+          <li>✅ Post-launch support</li>
+        </ul>
+
+        <div style="margin-top:20px" class="small muted">Featured demo: <strong>Students Global Summit</strong></div>
+      </div>
+
+      <aside class="glass">
+        <a href="https://www.studentglobalsummit.com/" target="_blank" rel="noopener" style="display:block;cursor:pointer;text-decoration:none">
+          <img src="sgs_screenshot.jpeg" alt="Students Global Summit screenshot" class="feature-img" />
+        </a>
+        <div class="glass-body">
+          <h3 style="margin:0">Students Global Summit</h3>
+          <div class="meta">Demo event site • HTML · CSS · JS</div>
+          <a class="small-link" href="https://www.studentglobalsummit.com/" target="_blank" rel="noopener">View case study →</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container section fade-in">
+      <div class="section-header">
+        <h2>What I build</h2>
+        <p class="muted">Everything needed to create high-performing websites and web apps</p>
+      </div>
+
+      <div class="features stagger" style="margin-top:18px;">
+        <div class="feature">
+          <h4>Landing Pages</h4>
+          <p>Fast, SEO-friendly landing pages optimised for conversion and clarity.</p>
+        </div>
+        <div class="feature">
+          <h4>Web Apps</h4>
+          <p>Interactive dashboards and single page apps with clean code and performance.</p>
+        </div>
+        <div class="feature">
+          <h4>Performance & Audit</h4>
+          <p>Lighthouse-focused performance improvements, CDN setup and caching strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="container section fade-in">
+      <h2>Pricing</h2>
+      <p class="muted">Starting prices. Final quote after scoping call.</p>
+
+      <div class="pricing stagger">
+        <div class="plan">
+          <h3>Starter</h3>
+          <div class="price">$1.5K</div>
+          <ul class="small muted">
+            <li>One-page landing</li>
+            <li>Responsive + basic SEO</li>
+            <li>Delivery: 5–7 days</li>
+          </ul>
+          <div style="margin-top:12px;"><a class="btn-primary" href="#contact">Request Starter</a></div>
+        </div>
+
+        <div class="plan recommended" aria-label="recommended">
+          <div class="badge">Popular</div>
+          <h3>Business</h3>
+          <div class="price">$4.5K</div>
+          <ul class="small muted">
+            <li>Multi-page site</li>
+            <li>Contact form & analytics</li>
+            <li>Delivery: 10–14 days</li>
+          </ul>
+          <div style="margin-top:12px;"><a class="btn-primary" href="#contact">Request Business</a></div>
+        </div>
+
+        <div class="plan">
+          <h3>Custom</h3>
+          <div class="price">Contact</div>
+          <ul class="small muted">
+            <li>Custom web apps</li>
+            <li>Auth, DB, integrations</li>
+            <li>Custom timeline</li>
+          </ul>
+          <div style="margin-top:12px;"><a class="btn-primary" href="#contact">Request Quote</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="container section fade-in">
+      <div class="section-header">
+        <h2>Clients Experience</h2>
+        <p class="muted">Short testimonials from recent projects and happy customers.</p>
+      </div>
+      <div class="test-row stagger" aria-live="polite">
+  <!-- Testimonial 1 -->
+  <article class="tcard" role="article" aria-label="Testimonial from Aryan">
+    <div class="tcard-top">
+      <img class="avatar" src="aryan.jpeg" alt="Aryan Mohapatra photo">
+      <div class="meta">
+        <div class="name">Aryan Mohapatra</div>
+        <div class="role">Founder, Marketing Head</div>
+        <div class="rating" aria-hidden="true">★★★★★</div>
+        <div class="social-inline">
+          <a class="social-btn" href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE2" target="_blank" rel="noopener" aria-label="Open Aryan on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE2" target="_blank" rel="noopener" aria-label="Open Aryan on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      <p>“Our signup rate improved after the redesign — highly recommend.”</p>
+    </blockquote>
+  </article>
+
+  <!-- Testimonial 2 -->
+   <article class="tcard" role="article" aria-label="Testimonial from Shiba">
+    <div class="tcard-top">
+      <img class="avatar" src="Sadashiv.jpeg" alt="Shiba Narayan Dash photo">
+      <div class="meta">
+        <div class="name">Sadashiv Sahoo</div>
+        <div class="role">Founder studentglobalsummit</div>
+        <div class="rating" aria-hidden="true">★★★★★</div>
+        <div class="social-inline">
+          <a class="social-btn" href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener" aria-label="Open Shiba on Instagram">
+            <!-- instagram svg -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank" rel="noopener" aria-label="Open Shiba on LinkedIn">
+            <!-- linkedin svg -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      <p>“Delivered on time and communicated clearly — great experience.”</p>
+    </blockquote>
+  </article>
+  
+
+  <!-- Testimonial 3 -->
+  <article class="tcard" role="article" aria-label="Testimonial from Rina">
+    <div class="tcard-top">
+      <img class="avatar" src="Aditya.jpeg" alt="Rina photo">
+      <div class="meta">
+        <div class="name">Aditya Deveraj </div>
+        <div class="role">Founder, Finance Head</div>
+        <div class="rating" aria-hidden="true">★★★★★</div>
+        <div class="social-inline">
+          <a class="social-btn" href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE3" target="_blank" rel="noopener" aria-label="Open Rina on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE3" target="_blank" rel="noopener" aria-label="Open Rina on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      <p>“Fast turnaround and reliable support post-launch.”</p>
+    </blockquote>
+    </article>
+        </div>
+      </section>
+
+      <!-- Founders / Team -->
+      <section id="founders" class="container section fade-in">
+        <h2>Founders</h2>
+        <div class="founders-grid stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+          <!-- Founder 1 -->
+          <div class="card founder-card">
+            <div class="founder-top" style="display:flex;gap:14px;align-items:center;">
+              <img src="shiba.jpeg" alt="Shiba Narayan Dash" class="avatar founder-avatar">
+              <div>
+                <h3 style="margin:0">Shiba Narayan Dash — code#</h3>
+                <div class="meta" style="margin-top:6px">
+                  <div class="role muted">Freelance Web Developer</div>
+                </div>
+                <div class="social-inline" style="margin-top:8px">
+                  <a class="social-btn" href="https://www.instagram.com/the_shiva_i" target="_blank" rel="noopener" aria-label="Open Shiba on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+                  </a>
+                  <a class="social-btn" href="https://www.linkedin.com/in/the_shiva_i" target="_blank" rel="noopener" aria-label="Open Shiba on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted" style="margin-top:12px">Available for contract work, consultations and website builds. Reach out for a quick quote or portfolio review.</p>
+
+            <div style="margin-top:12px;display:flex;gap:12px;align-items:center;">
+              <a class="btn-secondary" href="mailto:shravan4981@gmail.com">Email</a>
+              <a class="btn-ghost" href="#contact">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Founder 2 (placeholder) -->
+          <div class="card founder-card">
+            <div class="founder-top" style="display:flex;gap:14px;align-items:center;">
+              <img src="aryan.jpeg" alt="Founder 2" class="avatar founder-avatar">
+              <div>
+                <h3 style="margin:0">Aryan Mohapatra — Marketing Head</h3>
+                <div class="meta" style="margin-top:6px">
+                  <div class="role muted">Product & Strategy</div>
+                </div>
+                <div class="social-inline" style="margin-top:8px">
+                  <a class="social-btn" href="#" aria-label="Open Asha on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+                  </a>
+                  <a class="social-btn" href="#" aria-label="Open Asha on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted" style="margin-top:12px">Product lead focusing on UX and conversion optimisation.</p>
+
+            <div style="margin-top:12px;display:flex;gap:12px;align-items:center;">
+              <a class="btn-secondary" href="#">Profile</a>
+              <a class="btn-ghost" href="#contact">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Founder 3 (placeholder) -->
+          <div class="card founder-card">
+            <div class="founder-top" style="display:flex;gap:14px;align-items:center;">
+              <img src="Shankar.jpeg" alt="Founder 3" class="avatar founder-avatar">
+              <div>
+                <h3 style="margin:0">Sankar Ku Nanda — Tech Lead</h3>
+                <div class="meta" style="margin-top:6px">
+                  <div class="role muted">Engineering & Architecture</div>
+                </div>
+                <div class="social-inline" style="margin-top:8px">
+                  <a class="social-btn" href="#" aria-label="Open Rohan on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="17.7" cy="6.3" r="0.6" fill="currentColor"/></svg>
+                  </a>
+                  <a class="social-btn" href="#" aria-label="Open Rohan on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8.5 10.5v6M8.5 8.5v.01M12.2 16.5v-4.2c0-1.14.86-1.92 1.95-1.92 1.09 0 1.95.78 1.95 1.92v4.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted" style="margin-top:12px">Tech lead responsible for platform architecture and integrations.</p>
+
+            <div style="margin-top:12px;display:flex;gap:12px;align-items:center;">
+              <a class="btn-secondary" href="#">Profile</a>
+              <a class="btn-ghost" href="#contact">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+    <section id="faq" class="container section fade-in">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How much does your service cost?</button>
+          <div class="faq-a" hidden>
+            <p>Pricing starts from ₹12,000 for a starter site. Final quote depends on scope — request a call for details.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer support after launch?</button>
+          <div class="faq-a" hidden>
+            <p>Yes — We provide optional post-launch maintenance and support packages tailored to your needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you migrate my existing site?</button>
+          <div class="faq-a" hidden>
+            <p>We can help migrate content and set up hosting; reach out with details and I’ll prepare a migration plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section fade-in">
+      <h2>Contact / Request a quote</h2>
+      <div class="contact contact-grid">
+        <form id="contactForm" class="card contact-card" aria-label="Contact form">
+          <h3>Get a free quote</h3>
+          <p class="small muted">Tell me about your project and budget — I’ll respond within 24–48 hours.</p>
+
+          <div class="form-group icon name">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" aria-label="Your name">
+          </div>
+
+          <div class="form-group icon email">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" aria-label="Email address">
+          </div>
+
+          <div class="form-group icon budget">
+            <label class="sr-only" for="budget">Budget</label>
+            <input id="budget" name="budget" placeholder="Budget (₹) — e.g. 12000" aria-label="Budget">
+          </div>
+
+          <div class="form-group">
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Brief project description, timeline, goals..." aria-label="Message"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn-primary">Send request</button>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </div>
+          <div id="toast" class="toast" role="status" aria-hidden="true"></div>
+        </form>
+
+        <aside class="contact-aside card contact-info">
+          <h4>Quick contact</h4>
+          <p class="small muted">Prefer WhatsApp? Click below.</p>
+          <p style="margin:12px 0"><a class="btn-secondary" href="https://wa.me/918328830237" target="_blank" rel="noopener">Message +91 83288 30237</a></p>
+          <div class="contact-meta small muted">
+            <div><strong>Email</strong><br/><a href="mailto:shravan4981@gmail.com">shravan4981@gmail.com</a></div>
+            <div style="margin-top:8px"><strong>Response</strong><br/>Usually within 24–48h</div>
+          </div>
+          <div class="contact-cta" style="margin-top:14px">
+            <a class="btn-ghost" href="#pricing">View Pricing</a>
+            <a class="btn-secondary" href="#features">See Services</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Shiva_i — code#</div>
+      <div class="small muted">Students Global Summit • demo & portfolio</div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="script.js"></script>
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
